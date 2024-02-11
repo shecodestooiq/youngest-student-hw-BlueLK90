@@ -1,12 +1,11 @@
-function showYoungestStudent(arr) {
-    var youngestName = arr[0].name;
-    var youngestAge = arr[0].age;
-    for (let i = 1; i < arr.length; i++){
-        if (arr[i].age < youngestAge){
-            youngestName = arr[i].name;
-            youngestAge = arr[i].age;
+function showYoungestStudent(students) {
+    var youngestName = students[0].name;
+    var youngestAge = students[0].age;
+    for (let i = 1; i < students.length; i++){
+        if (students[i].age < youngestAge){
+            youngestName = students[i].name;
+            youngestAge = students[i].age;
         }
-            
     }
     console.log(youngestName, youngestAge);
 }
