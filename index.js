@@ -14,7 +14,7 @@ var students = [
     {name: "Ahmed", age: 11}, 
     {name: "Ayman", age: 13}, 
     {name: "Aya", age: 16}, 
-    {name: "Alia", age: 17},
+    {name: "Alia", age: 10},
     {name: "Arwa", age: 14}
     ]
 showYoungestStudent(students)
