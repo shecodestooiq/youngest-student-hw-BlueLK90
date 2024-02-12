@@ -1,5 +1,5 @@
 function showYoungestStudent(arr) {
-    if (arr.length === 0) console.log('No Students Found.');
+    if (arr.length == 0) console.log('No Students Found.');
     else {
         var youngest = arr[0];
     
@@ -12,12 +12,9 @@ function showYoungestStudent(arr) {
     console.log(youngest.name);
 }
 var students = [
-    {name: "Ali", age: 15}, 
-    {name: "Ahmed", age: 11}, 
-    {name: "Ayman", age: 13}, 
-    {name: "Aya", age: 16}, 
-    {name: "Alia", age: 10},
-    {name: "Arwa", age: 14}
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 2 },
+    { name: 'Charlie', age: 21 },
     ]
 showYoungestStudent(students)
 
