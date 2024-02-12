@@ -1,13 +1,15 @@
-function showYoungestStudent(students) {
-    var youngestName = students[0].name;
-    var youngestAge = students[0].age;
-    for (let i = 1; i < students.length; i++){
-        if (students[i].age < youngestAge){
-            youngestName = students[i].name;
-            youngestAge = students[i].age;
+function showYoungestStudent(arr) {
+    if (arr.length === 0) console.log('No Students Found.');
+    else {
+        var youngest = arr[0];
+    
+        for (let i = 1; i < arr.length; i++){
+            if (arr[i].age < youngest.age){
+                youngest = arr[i];
+            }
         }
     }
-    console.log(youngestName, youngestAge);
+    console.log(youngest.name);
 }
 var students = [
     {name: "Ali", age: 15}, 
